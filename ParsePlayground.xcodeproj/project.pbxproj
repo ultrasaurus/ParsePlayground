@@ -12,9 +12,12 @@
 		265AD5971C35CB1500109969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AD5951C35CB1500109969 /* Main.storyboard */; };
 		265AD5991C35CB1500109969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265AD5981C35CB1500109969 /* Assets.xcassets */; };
 		265AD59C1C35CB1500109969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AD59A1C35CB1500109969 /* LaunchScreen.storyboard */; };
+		26E4CB261C35CC8200939C29 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26E4CB251C35CC8200939C29 /* Podfile */; };
+		754DABC88FAD6E124652D021 /* Pods_ParsePlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2467DC8DC7B288246956C3D3 /* Pods_ParsePlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2467DC8DC7B288246956C3D3 /* Pods_ParsePlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParsePlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		265AD58E1C35CB1500109969 /* ParsePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParsePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		265AD5911C35CB1500109969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		265AD5931C35CB1500109969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		265AD5981C35CB1500109969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265AD59B1C35CB1500109969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		265AD59D1C35CB1500109969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E4CB251C35CC8200939C29 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3EEB3296FAABFBCD428EF045 /* Pods-ParsePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParsePlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParsePlayground/Pods-ParsePlayground.release.xcconfig"; sourceTree = "<group>"; };
+		A33F8DB3505A2DCA42180D3D /* Pods-ParsePlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParsePlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParsePlayground/Pods-ParsePlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754DABC88FAD6E124652D021 /* Pods_ParsePlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +45,11 @@
 		265AD5851C35CB1500109969 = {
 			isa = PBXGroup;
 			children = (
+				26E4CB251C35CC8200939C29 /* Podfile */,
 				265AD5901C35CB1500109969 /* ParsePlayground */,
 				265AD58F1C35CB1500109969 /* Products */,
+				AFE262C7A3474EEB8A7FF737 /* Pods */,
+				3BCB14D9EF2AC07BF4CFE234 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,23 @@
 			path = ParsePlayground;
 			sourceTree = "<group>";
 		};
+		3BCB14D9EF2AC07BF4CFE234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2467DC8DC7B288246956C3D3 /* Pods_ParsePlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFE262C7A3474EEB8A7FF737 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A33F8DB3505A2DCA42180D3D /* Pods-ParsePlayground.debug.xcconfig */,
+				3EEB3296FAABFBCD428EF045 /* Pods-ParsePlayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 265AD5A01C35CB1500109969 /* Build configuration list for PBXNativeTarget "ParsePlayground" */;
 			buildPhases = (
+				748AAB3C91E16BEE71862461 /* Check Pods Manifest.lock */,
 				265AD58A1C35CB1500109969 /* Sources */,
 				265AD58B1C35CB1500109969 /* Frameworks */,
 				265AD58C1C35CB1500109969 /* Resources */,
+				025E90B7121A00C851954478 /* Embed Pods Frameworks */,
+				B94C1DCCFEDC60CB01D9D335 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +154,60 @@
 			files = (
 				265AD59C1C35CB1500109969 /* LaunchScreen.storyboard in Resources */,
 				265AD5991C35CB1500109969 /* Assets.xcassets in Resources */,
+				26E4CB261C35CC8200939C29 /* Podfile in Resources */,
 				265AD5971C35CB1500109969 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025E90B7121A00C851954478 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParsePlayground/Pods-ParsePlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748AAB3C91E16BEE71862461 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B94C1DCCFEDC60CB01D9D335 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParsePlayground/Pods-ParsePlayground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		265AD58A1C35CB1500109969 /* Sources */ = {
@@ -247,6 +326,7 @@
 		};
 		265AD5A11C35CB1500109969 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33F8DB3505A2DCA42180D3D /* Pods-ParsePlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParsePlayground/Info.plist;
@@ -258,6 +338,7 @@
 		};
 		265AD5A21C35CB1500109969 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EEB3296FAABFBCD428EF045 /* Pods-ParsePlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParsePlayground/Info.plist;
@@ -286,6 +367,7 @@
 				265AD5A21C35CB1500109969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
