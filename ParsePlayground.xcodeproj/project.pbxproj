@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		2467DC8DC7B288246956C3D3 /* Pods_ParsePlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParsePlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2654ED851C35D7FB00F635A3 /* experiment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = experiment.playground; sourceTree = "<group>"; };
 		265AD58E1C35CB1500109969 /* ParsePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParsePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		265AD5911C35CB1500109969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		265AD5931C35CB1500109969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,7 @@
 		265AD5981C35CB1500109969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265AD59B1C35CB1500109969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		265AD59D1C35CB1500109969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26E4CB251C35CC8200939C29 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		26E4CB251C35CC8200939C29 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3EEB3296FAABFBCD428EF045 /* Pods-ParsePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParsePlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParsePlayground/Pods-ParsePlayground.release.xcconfig"; sourceTree = "<group>"; };
 		A33F8DB3505A2DCA42180D3D /* Pods-ParsePlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParsePlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParsePlayground/Pods-ParsePlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				26E4CB251C35CC8200939C29 /* Podfile */,
+				2654ED851C35D7FB00F635A3 /* experiment.playground */,
 				265AD5901C35CB1500109969 /* ParsePlayground */,
 				265AD58F1C35CB1500109969 /* Products */,
 				AFE262C7A3474EEB8A7FF737 /* Pods */,
